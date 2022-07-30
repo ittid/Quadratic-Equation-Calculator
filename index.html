@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadratic Equation calculator JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <span class="brand">
+        <img src="https://www.gstatic.com/education/formulas2/443397389/en/quadratic_equation.svg" alt="Quadratic Equation">
+      </span>
+      <h1>Quadratic Equation Calculator</h1>
+      <p>
+        A quadratic equation is an algebraic equation of the second degree in x.
+        The quadratic equation standard form is
+        <strong>ax<sup>2</sup> + bx + c = 0</strong>:
+        <br><br>
+        <span><img src="https://www.gstatic.com/education/formulas2/443397389/en/quadratic_equation_abc.svg" alt="a,b,c"> <small> = known numbers, where a ≠ 0</small></span>
+        <br>
+        <span><img src="https://www.gstatic.com/education/formulas2/443397389/en/quadratic_equation_x.svg" alt="x"> <small> = the unknown</small></span>
+        <p><a href="https://github.com/ittid" target="_blank">@ittid</a></p>
+      </p>
+    </main>
+    <div class="calculator-wrap">
+      <label for="a_num">Type the <strong>a</strong> value :</label>
+      <input type="number" id="a_num" placeholder="a">
+      <mark id="msg_a"></mark>
+      <label for="b_num">Type the <strong>b</strong> value :</label>
+      <input type="number" id="b_num" placeholder="b">
+      <mark id="msg_b"></mark>
+      <label for="c_num">Type the <strong>c</strong> value :</label>
+      <input type="number" id="c_num" placeholder="c">
+      <mark id="msg_c"></mark>
+      <span id="big_msg"></span>
+    </div>
+    <div class="display-equation">
+      <div class="wrap">
+        <span id="a_value">a</span>x<sup>2</sup> + <span id="b_value">b</span>x + <span id="c_value">c</span>
+      </div>
+      <button data-calcs>Calculate with Δ=b2-4ac</button>
+    </div>
+    <div class="result">
+      <span>Δ = <strong id="calc"></strong></span>
+      <span>x1 = <strong id="x1"></strong></span>
+      <span>x2 = <strong id="x2"></strong></span>
+    </div>
+  </body>
+</html>
